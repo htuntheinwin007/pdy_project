@@ -87,6 +87,7 @@
     <Content Include="mediaquery.html" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="pdycopy.html" />
+    <Content Include="saikwan.html" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
     <Content Include="Scripts\jquery-3.5.1.slim.js" />

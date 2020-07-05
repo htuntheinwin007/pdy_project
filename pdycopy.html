@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta name="viewport" content="width=device-width;initial-scale=1" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <style>
+        .rowbg {
+            background-color: #7d5f93;
+            padding: 25px 100px;
+        }
+
+        .myanchor {
+            color: white;
+        }
+
+        .rowbg1 {
+            background-color: #f6dfa1;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+            .rowbg1 h1 {
+                color: white;
+                margin-bottom: 2rem;
+            }
+
+            .rowbg1 label {
+                color: white;
+            }
+
+            .rowbg1 .form-control {
+                border-radius: 0px !important;
+            }
+
+        .mytxt {
+            background-color: #7d5f93 !important;
+            border: 0px;
+            color: white !important;
+        }
+
+            .mytxt::placeholder {
+                color: white;
+            }
+
+        #mychk {
+            float: left !important;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        .myrow {
+            margin-top: 15px;
+        }
+
+        .mybtn {
+            background-color: #7d5f93 !important;
+            border: 0px;
+            color: white !important;
+            border-radius: 100px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0.5rem 1rem;
+        }
+
+        .myrule {
+            border: 1px solid white;
+        }
+
+        .myh2 {
+            color: white;
+            font-size: 32px;
+            text-align: center;
+            padding: 0px 5px;
+            margin-top: -40px;
+            background-color: #f6dfa1;
+        }
+
+        @media screen and (min-width:800px) {
+            .mylogo {
+                width: 280px;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .mylogo {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="container-fluid">
+        <div class="row rowbg">
+            <div class="col-8">
+                <img src="img/pdylog.png" class="mylogo"/>
+            </div>
+
+            <div class=" col-2" style="padding:40px 10px;">
+                <a href="#" class="myanchor"> All Course </a>
+            </div>
+
+            <div class="col-2" style="padding:40px 10px;">
+                <a href="#" class="myanchor"> Sign In </a>
+            </div>
+
+        </div>
+
+        <div class="row rowbg1">
+            
+            <div class="col-md-6 offset-3">
+                <h1 class="text-center">Welcome Back!</h1>
+
+                <label for="txtemail">Email</label>
+                <input type="email" id="txtemail" required class="form-control mytxt" placeholder="Email" />
+                <br />
+                <label for="txtpw">Password</label>
+                <input type="password" id="txtpw" required class="form-control mytxt" placeholder="Password" />
+                <div class="row myrow">
+                    <div class="col-md-3">
+                        <input type="checkbox" id="mychk" class="form-check mychk" />
+                        <label for="mychk">Remember Me</label>
+
+                    </div>
+                    <div class="col-md-3 offset-6"> Forget Password? </div>
+                </div>
+
+                <input type="submit" class="mybtn" value="Sign in" />
+
+                <div class="row myrow">
+                    
+                    <div class="col-md-6 offset-3">
+                        <hr class="myrule" />
+                        <div class="myres" style="padding:0px 20px;">
+                            <h2 class="myh2">or sign in with</h2>
+                        </div>
+                        
+                       
+                    </div>
+                  
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>
+
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

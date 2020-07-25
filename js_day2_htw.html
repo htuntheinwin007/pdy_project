@@ -19,14 +19,85 @@
         // Comp (>,<,>=,<=,==,!=,===)
         // Logi (&&, ||, !)
 
-        alert(number);
+        //alert(number); confirm, prompt
 
+        //Decision Making
 
+        function check()
+        {
+            var mynum = document.getElementById("txtnum").value;
+
+            if (mynum % 2 == 0) {
+
+                //Expression
+                alert("Even");
+
+            }
+
+            else
+            {
+                //Expression
+                alert("Odd");
+            }
+        }
+
+        function Add()
+        {
+            var fn = parseInt(document.getElementById("firsNum").value);
+            var sn = parseInt(document.getElementById("SecNum").value);
+            alert(fn + sn);
+        }
+
+        function Substract()
+        {
+            var fn = parseInt(document.getElementById("firsNum").value);
+            var sn = parseInt(document.getElementById("SecNum").value);
+            alert(fn - sn);
+        }
+
+        function Multiple() {
+            var fn = parseInt(document.getElementById("firsNum").value);
+            var sn = parseInt(document.getElementById("SecNum").value);
+            alert(fn * sn);
+        }
+
+        function Divided()
+        {
+            var fn = parseInt(document.getElementById("firsNum").value);
+            var sn = parseInt(document.getElementById("SecNum").value);
+            alert(fn / sn);
+        }
+
+        function CheckLeapYear() {
+            var year = parseInt(document.getElementById("txtyear").value);
+
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 100 == 0 && year % 400 == 0))
+            {
+                alert("Leap year");
+            }
+
+            else
+            {
+                alert("Not Leap year");
+            }
+        }
+
+        // 252 (0-50=50, 51-100=50,101-150=50,151-200=50,200< 52)
 
     </script>
 
 </head>
 <body>
+    <input type="text" id="txtnum" />
+    <input type="button" value="Check Even?" onclick="check()" />
 
+    <input type="text" id="firsNum" />
+    <input type="text" id="SecNum" />
+    <input type="button" value="Plus" onclick="Add()" />
+    <input type="button" value="Minus" onclick="Substract()" />
+    <br />
+
+    <input type="text" id="txtyear" />
+    <input type="button" value="Leap Year?" onclick="CheckLeapYear()" />
 </body>
 </html>

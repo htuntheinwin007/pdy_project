@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aungmin_index.html" />
+    <Content Include="aungmin_js_day2.html" />
     <Content Include="bs.html" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
@@ -85,6 +87,8 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="mediaquery.html" />
+    <Content Include="myindex.html" />
+    <Content Include="readme" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="pdycopy.html" />
     <Content Include="saikwan.html" />

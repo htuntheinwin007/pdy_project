@@ -93,6 +93,17 @@
             document.write(directory);
         }
 
+        function showimage()
+        {
+            var img = document.getElementById("myimg");
+            img.style.display = "block";
+        }
+
+        function hideimage() {
+            var img = document.getElementById("myimg");
+            img.style.display = "none";
+        }
+
     </script>
 
 </head>
@@ -120,5 +131,13 @@
     <input type="button" value="Using escape character /" onclick="stringplus()" />
     <br />
 
-</body>
+    <input type="button" value="Testing on mouse over event" onmouseover="" />
+
+    <img src="img/Qs.jpg" id="myimg" />
+    <br />
+   
+    <input type="button" value="Show Image" onclick="showimage()" />
+    <input type="button" value="Hide Image" onclick="hideimage()" />
+    <br />
+
 </html>

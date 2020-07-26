@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        function Month() {
+            var mo = parseInt(document.getElementById("txtMonth").value);
+            var year = 2019;
+            switch (mo)
+            {
+                case 2:
+
+                    if ((year % 4 == 0 && year % 100 != 0) || (year % 100 == 0 && year % 400 == 0)) {
+                        alert("29 Days");
+                    }
+                    else {
+                        alert("28 Days")
+                    }
+
+                    ; break;
+                case 4: case 6: case 9: case 11: alert("30 Days"); break;
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: alert("31 Days"); break;
+                //case 1: alert("January"); break;
+                //case 2: alert("February"); break;
+                //case 3: alert("March"); break;
+                //case 4: alert("April"); break;
+                //case 5: alert("May"); break;
+                //case 6: alert("June"); break;
+                //case 7: alert("July"); break;
+                //case 8: alert("August"); break;
+                //case 9: alert("September"); break;
+                //case 10: alert("October"); break;
+                //case 11: alert("November"); break;
+                //case 12: alert("December"); break;
+                default: alert("Wrong Input"); break;
+            }
+
+        }
+
+        // Looping  (for, while, do-while)
+        // Same Action
+
+        function testloop() {
+
+            for (var start = 0; start < 5;start++)
+            {
+                for (var col = 0; col < 5 - start; col++)
+                {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+
+        function stringplus() {
+            //var s = "Hello";
+            //var t = "World";
+            //var directory = "C:\\Windows\\Users\\tun";
+            
+            document.write(String.fromCharCode(72,101,108,108,111));
+        }
+
+        function showcontrol() {
+            var img = document.getElementById("myimg");
+            img.style.display = "block";
+        }
+
+        function hidecontrol() {
+            var img = document.getElementById("myimg");
+
+            img.style.display = "none";
+        }
+      
+
+    </script>
+</head>
+<body>
+    <img src="img/1.png" id="myimg" />
+    <input type="text" id="txtMonth" />
+    <input type="button" value="How Many Days?" onclick="Month()" />
+
+    <input type="button" value="Loop Test" onclick="testloop()" />
+
+    <input type="button" value="String Con" onmouseover="stringplus()" />
+
+
+    <input type="button" value="show" onclick="showcontrol()" />
+    <input type="button" value="hide" onclick="hidecontrol()" />
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Using Switch or Case Decision Control Statement</title>
+
+    <script>
+
+        function Month()
+        {
+            var mo = parseInt(document.getElementById("txtmonth").value);
+
+            switch (mo)
+            {
+                case 1: alert("Jan"); break;
+                case 2: alert("Feb"); break;
+                case 3: alert("Mar"); break;
+                case 4: alert("Apr"); break;
+                case 5: alert("May"); break;
+                case 6: alert("Jun"); break;
+                case 7: alert("Jul"); break;
+                case 8: alert("Aug"); break;
+                case 9: alert("Sep"); break;
+                case 10: alert("Oct"); break;
+                case 11: alert("Nov"); break;
+                case 12: alert("Dec"); break;
+                default: alert("Not a valid month"); break;
+            }
+        }
+
+        function HowManyDays()
+        {
+            var mo = parseInt(document.getElementById("txtmonth2").value);
+            var year = 2020;
+            switch (mo)
+            {
+                case 2:
+                    if ((year % 4 == 0 && year % 100 != 0) || (year % 100 == 0 && year % 400 == 0))
+                    {
+                        alert("29 days");
+                    }
+
+                    else
+                    {
+                        alert("29 days");
+                    }
+                    
+                    break;
+
+                case 4: case 6: case 9: case 11: alert("30 days"); break;
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: alert("30 days"); break;
+                default: alert("Not a valid month"); break;
+
+            }
+            
+        }
+
+        function testloop()
+        {
+            for (var start = 0; start < 10; start++)
+            {
+                document.write(start + ". " + "Phandeeyar Institute <br>"); 
+            }
+                       
+        }
+
+        function drawflag() {
+            for (var start = 0; start < 5; start++)
+            {
+                for (var col = 0; col < (5 - start); col++)
+                {
+                    document.write("*");
+                }
+
+                document.write("<br>");
+            }
+
+        }
+        
+        function helloworld()
+        {
+            var s = "Hello";
+            var t = "World!";
+            
+            document.write(s + " " + t);
+        }
+
+        function stringplus()
+        {
+            
+            var directory = "C:\\Widows\\Users\\AungMin";
+
+            document.write(directory);
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="txtmonth" />
+    <input type="button" value="Which Month?" onclick="Month()" />
+
+    <br />
+
+    <input type="text" id="txtmonth2" />
+    <input type="button" value="How Many Days?" onclick="HowManyDays()" />
+    <br />
+
+    <input type="button" value="loop test" onclick="testloop()" />
+    <br />
+
+    <input type="button" value="Draw flag using *" onclick="drawflag()" />
+    <br />
+
+    <input type="button" value="Hello World" onclick="helloworld()" />
+    <br />
+
+    <input type="button" value="Using escape character /" onclick="stringplus()" />
+    <br />
+
+</body>
+</html>
